@@ -1,0 +1,29 @@
+<!--O atributo slot é usado em Shadow DOM para definir 
+slots onde o conteúdo pode ser inserido.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o título da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Slot</title>
+</head>
+<body>
+    <!-- Contêiner que define um slot -->
+    <div>
+        <slot name="meuSlot"></slot>
+    </div>
+
+    <!-- Conteúdo que será inserido no slot -->
+    <p slot="meuSlot">Este conteúdo será inserido no slot.</p>
+</body>
+</html>
+
+
+<!--
+O atributo slot define onde o conteúdo será inserido dentro do Shadow DOM.
+No exemplo, o parágrafo será inserido no slot definido dentro do div.
+
+-->

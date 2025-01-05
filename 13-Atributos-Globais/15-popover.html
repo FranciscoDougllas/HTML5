@@ -1,0 +1,38 @@
+<!--O atributo popover (ainda experimental) permite a criação de um 
+popover, uma pequena janela que aparece sobre o conteúdo quando interagido.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o título da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Popover</title>
+</head>
+<body>
+    <!-- Botão que ativa o popover -->
+    <button type="button" popover="auto">Clique para ver mais informações</button>
+
+    <!-- Popover conteúdo -->
+    <div popover="manual" style="display:none;">
+        <p>Este é o conteúdo do popover.</p>
+    </div>
+
+    <script>
+        // Lógica para exibir o popover (exemplo simplificado)
+        const botao = document.querySelector('button[popover="auto"]');
+        const popover = document.querySelector('div[popover="manual"]');
+
+        botao.addEventListener('click', () => {
+            popover.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
+
+<!--
+O atributo popover pode ser usado para criar pequenas janelas 
+de conteúdo que aparecem ao interagir com um elemento.
+No exemplo, o popover aparece ao clicar no botão.
+-->

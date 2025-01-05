@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Template</title>
+</head>
+<body>
+    <!-- A tag <template> é usada para definir um bloco de conteúdo que pode ser instanciado posteriormente com JavaScript. -->
+    <template id="my-template">
+        <p>Este é um conteúdo de exemplo que pode ser reutilizado.</p>
+    </template>
+    <script>
+        // Exemplo de como usar o conteúdo do template com JavaScript
+        const template = document.getElementById('my-template');
+        const clone = document.importNode(template.content, true);
+        document.body.appendChild(clone);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--O atributo inputmode especifica o tipo de entrada que deve ser 
+usado em um campo de entrada, como numérico, texto, entre outros.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o título da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Inputmode</title>
+</head>
+<body>
+    <!-- Formulário com campo de telefone -->
+    <form>
+        <label for="telefone">Telefone:</label>
+        <!-- 'inputmode' especifica que o campo deve usar o teclado numérico -->
+        <input type="tel" id="telefone" name="telefone" inputmode="numeric">
+        
+        <br><br>
+        
+        <!-- Botão de envio do formulário -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
+<!--
+O atributo inputmode pode ter valores como numeric, text, email, decimal, etc.
+No exemplo, inputmode="numeric" sugere ao navegador que exiba um teclado numérico ao usuário.
+-->

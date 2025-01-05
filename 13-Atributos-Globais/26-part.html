@@ -1,0 +1,31 @@
+<!--O atributo part permite a definição de partes específicas de 
+um elemento, que podem ser estilizadas usando CSS em Shadow DOM.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o título da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Part</title>
+    <style>
+        /* Estilo aplicado ao 'part' específico */
+        ::part(tituloEspecial) {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemento com 'part' para estilização -->
+    <h1 part="tituloEspecial">Título Especial</h1>
+</body>
+</html>
+
+
+<!--
+O atributo part permite definir partes específicas de um elemento que
+podem ser estilizadas usando CSS em Shadow DOM.
+No exemplo, o título h1 é estilizado especificamente por meio do part tituloEspecial.
+-->

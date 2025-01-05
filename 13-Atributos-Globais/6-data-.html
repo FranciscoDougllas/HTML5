@@ -1,0 +1,37 @@
+<!--
+O atributo data-* permite que você armazene dados personalizados 
+em elementos HTML. Esses dados podem ser usados em scripts 
+JavaScript para manipular o DOM.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o título da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Data-*</title>
+</head>
+<body>
+    <!-- Botão com atributos de dados personalizados -->
+    <button id="meuBotao" data-cor="azul" data-tamanho="grande">Clique em mim</button>
+
+    <script>
+        // Seleciona o botão pelo ID
+        const botao = document.getElementById('meuBotao');
+
+        // Acessa os valores dos atributos de dados personalizados
+        const cor = botao.getAttribute('data-cor');
+        const tamanho = botao.getAttribute('data-tamanho');
+
+        // Exibe os valores no console
+        console.log('Cor:', cor);
+        console.log('Tamanho:', tamanho);
+    </script>
+</body>
+</html>
+
+
+<!--O atributo data-* permite armazenar informações adicionais no 
+formato data-nomeatributo="valor".
+No exemplo, os atributos data-cor e data-tamanho armazenam 
+informações sobre o botão que podem ser acessadas e manipuladas via JavaScript.-->

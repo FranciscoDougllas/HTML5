@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de &lt;canvas&gt;</title>
+</head>
+<body>
+    <!-- A tag <canvas> é usada para desenhar gráficos e animações via JavaScript. -->
+    <!-- O atributo 'width' e 'height' define as dimensões do canvas. -->
+    <!-- O conteúdo dentro da tag <canvas> será exibido apenas se o navegador não suportar canvas. -->
+    <canvas id="meuCanvas" width="500" height="300">
+        Seu navegador não suporta a tag <code>&lt;canvas&gt;</code>.
+    </canvas>
+
+    <!-- Script JavaScript para desenhar no canvas -->
+    <script>
+        // Obtém o elemento canvas pelo seu ID
+        var canvas = document.getElementById('meuCanvas');
+        var ctx = canvas.getContext('2d'); // Obtém o contexto 2D para desenhar
+
+        // Desenha um retângulo vermelho
+        ctx.fillStyle = 'red'; // Define a cor de preenchimento
+        ctx.fillRect(50, 50, 150, 100); // Desenha o retângulo
+    </script>
+</body>
+</html>

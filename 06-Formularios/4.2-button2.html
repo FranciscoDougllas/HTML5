@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de &lt;button&gt;</title>
+</head>
+<body>
+    <h1>Exemplo de &lt;button&gt;</h1>
+    
+    <!-- Botão de envio de formulário -->
+    <form action="/submit" method="post">
+        <!-- A tag <button> cria um botão interativo -->
+        <!-- O atributo 'type' define o comportamento do botão -->
+        <!-- 'type="submit"' faz com que o botão envie o formulário quando clicado -->
+        <button type="submit">Enviar Formulário</button>
+    </form>
+    <!-- 'action="/submit"' define para onde os dados do formulário serão enviados -->
+    <!-- 'method="post"' especifica o método de envio dos dados -->
+
+    <br><br>
+
+    <!-- Botão de redefinição de formulário -->
+    <form action="/reset" method="post">
+        <!-- 'type="reset"' faz com que o botão limpe todos os campos do formulário -->
+        <button type="reset">Redefinir Formulário</button>
+    </form>
+
+    <br><br>
+
+    <!-- Botão de clique simples -->
+    <!-- O botão pode ser usado para executar JavaScript ou outras ações -->
+    <button type="button" onclick="alert('Botão clicado!')">Clique Aqui</button>
+    <!-- 'type="button"' cria um botão que não tem um comportamento de envio de formulário -->
+    <!-- 'onclick="alert('Botão clicado!')"' define uma ação que ocorre quando o botão é clicado -->
+
+    <br><br>
+
+    <!-- Botão com estilos e classes CSS -->
+    <!-- Pode ser estilizado com CSS para aparência personalizada -->
+    <button type="button" class="btn-primary">Botão Estilizado</button>
+    <!-- 'class="btn-primary"' aplica uma classe CSS para estilizar o botão -->
+    <!-- Certifique-se de definir o estilo correspondente no seu CSS -->
+    
+    <style>
+        /* Estilos para o botão estilizado */
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</body>
+</html>

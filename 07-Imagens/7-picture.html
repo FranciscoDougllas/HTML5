@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de &lt;picture&gt;</title>
+</head>
+<body>
+    <!-- A tag <picture> é usada para fornecer diferentes imagens para diferentes condições de exibição. -->
+    <!-- O elemento <source> dentro de <picture> permite definir diferentes imagens com base em atributos como 'media'. -->
+    <picture>
+        <!-- O elemento <source> com o atributo 'media' define a imagem a ser exibida em diferentes larguras de tela. -->
+        <source srcset="imagem-pequena.jpg" media="(max-width: 600px)">
+        <source srcset="imagem-media.jpg" media="(max-width: 1200px)">
+        <!-- O <img> é o fallback para navegadores que não suportam <picture>. -->
+        <img src="imagem-grande.jpg" alt="Imagem adaptativa">
+    </picture>
+</body>
+</html>

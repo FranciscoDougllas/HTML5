@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de &lt;track&gt;</title>
+</head>
+<body>
+    <!-- A tag <track> é usada dentro de <video> para fornecer legendas e outras informações de tempo. -->
+    <!-- O atributo 'src' define o caminho para o arquivo de legendas. -->
+    <!-- O atributo 'kind' define o tipo de faixa (subtitles, captions, descriptions, chapters). -->
+    <!-- O atributo 'label' fornece uma descrição da faixa. -->
+    <!-- O atributo 'srclang' define o idioma da faixa de legendas. -->
+    <video controls width="600">
+        <!-- O elemento <source> define o arquivo de vídeo a ser reproduzido. -->
+        <source src="video.mp4" type="video/mp4">
+        <!-- A tag <track> fornece legendas em português para o vídeo. -->
+        <track src="legendas.pt.vtt" kind="subtitles" label="Português" srclang="pt">
+        Seu navegador não suporta a tag <code>&lt;video&gt;</code>.
+    </video>
+</body>
+</html>

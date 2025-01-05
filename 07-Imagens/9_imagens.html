@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags em HTML</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            background-color: #fbfbfd;
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+
+        .cabeça{
+            margin-top: -3vh;
+            padding-top: 1vh;
+            background-color: #334;
+            color: #fff;
+            font-size: 20px;
+            
+        }
+        .cabeça h1{
+            margin: 2vh;
+        }
+
+        .cabeça > p, h1, h3{
+            padding: 10px;
+            text-align: center;
+        }
+
+        em{
+            margin-top: 30px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: #c6e6b3;
+        }
+        .imagem{
+            margin-top: -10px;
+            background-color: rgb(112, 112, 155);
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0px 25px 70px #000000;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        p{
+            padding: 1vh;
+        }
+        footer{
+            margin-top: 10vh;
+            text-align: center;
+        }
+        section{
+            border-radius: 10px;
+            margin-top: 5vh;
+            margin-bottom: 20px;
+            background-color: rgb(215, 227, 249);
+            box-shadow: 0 0 10px rgb(132, 174, 218);
+        }
+      
+    </style>
+</head>
+<body>
+    <header class="cabeça">
+        <h1>Tags</h1>
+        <h3>Elementos de IMGENS do HTML</h3>
+        <p>&lt;img&gt; , 
+            &lt;map&gt; , 
+            &lt;area&gt; , 
+            &lt;canvas&gt; , 
+            &lt;figcation&gt; , 
+            &lt;figure&gt; , 
+            &lt;picture&gt; , 
+            &lt;svg&gt; , 
+        </p>
+    </header>
+
+    <div class="imagem"><p>&lt;/&gt;</p></div>
+  
+    <section>
+        <p><em>&lt;img&gt;</em><b>: Tag para imagens</b></p>
+        <img src="imgs/1.jpg" alt="Lobo" width="350px"
+        longdesc="Imagen de Um Leao com tamanho 350px djjdjd">
+    </section>
+
+    <section>
+        <p>Mais outro exemplo de utilização</p>
+        <img src="imgs/3.jpg" width="350px" 
+            srcset="imgs/3.jpg,
+            imgs/3.jpg,
+            imgs/3.jpg"
+            
+            sizes="((min-width: 0px) and (max-width: 450px)) 30px">
+    </section>
+
+    <section>
+        <p><em>&lt;img&gt; &lt;map&gt; &lt;area&gt;</em><b>: Mapa de area clicavel</b></p>
+        <img src="imgs/mapa-brasil.png" alt="Mapa do Brasil"
+        usemap="#regiosBrasil" width="250px">
+        <map name="regiosBrasil">
+            <area 
+                coords="0, 0, 697, 410" 
+                shape="rect" 
+                href="regian da Amazonina"
+                target="_blank" 
+                alt="">
+            <area shape="circle" coords="697, 205, 335, 351" href="www.site.teste" alt="" target="_blank">
+        </map>
+    </section>
+
+    <section>
+        <p><em>&lt;figure&gt;  &lt;figcaption&gt;</em><b>:</b></p>
+        <figure>
+            <img src="imgs/1.jpg" alt="" width="350px">
+            <figcaption>Legenda da Imagem com Figcation</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <p><em>&lt;picture&gt;</em><b>: container para imagens responsivas</b> </p>
+        <picture>
+            <source srcset="imgs/1.jpg">
+            <source media="(min-width: 250px)" srcset="imgs/1.jpg" sizes="">
+        </picture>
+    </section>
+
+    <section>
+        <p><em>&lt;canvas&gt;</em><b>: </b> </p>
+    </section>
+
+    <section>
+        <p><em>&lt;svg&gt;</em><b>: </b> </p>
+    </section>
+
+    <footer>
+        &copy; 05/2024 Elementos de Imagens do HTML
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Medidor</title>
+</head>
+<body>
+    <!-- A tag <meter> é usada para exibir um medidor de valor dentro de um intervalo. -->
+    <p>O nível de bateria é:</p>
+    <meter value="0.7" min="0" max="1">70%</meter>
+    <!-- O atributo "value" define o valor atual, "min" e "max" definem o intervalo. -->
+     
+
+    <script>
+        // Exemplo de como usar o medidor com JavaScript
+        const meter = document.querySelector('meter');
+        meter.value = 0.9;  // Define o valor do medidor
+        meter.min = 0;     // Define o valor minimo
+        meter.max = 1;     // Define o valor maximo
+    </script>
+</body>
+</html>

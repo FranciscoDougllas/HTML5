@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags em HTML</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            background-color: #fbfbfd;
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+
+        .cabeça{
+            margin-top: -3vh;
+            padding-top: 1vh;
+            background-color: #334;
+            color: #fff;
+            font-size: 20px;
+            
+        }
+        .cabeça h1{
+            margin: 2vh;
+        }
+
+        .cabeça > p, h1, h3{
+            padding: 10px;
+            text-align: center;
+        }
+
+        em{
+            margin-top: 30px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: #c6e6b3;
+        }
+        .imagem{
+            margin-top: -10px;
+            background-color: rgb(112, 112, 155);
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0px 25px 70px #000000;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        p{
+            padding: 1vh;
+        }
+        footer{
+            margin-top: 10vh;
+            text-align: center;
+        }
+        section{
+            border-radius: 10px;
+            margin-top: 5vh;
+            margin-bottom: 20px;
+            background-color: rgb(215, 227, 249);
+            box-shadow: 0 0 10px rgb(132, 174, 218);
+        }
+        ul, ol{
+            margin-left: 30px;
+            font-family: Helvetica;
+        }
+        dd{
+            margin-left: 20px;
+        }
+        dt{
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabeça">
+        <h1>Tags</h1>
+        <h3>Elementos de LISTAS do HTML</h3>
+        <p>&lt;ul&gt; , 
+            &lt;ol&gt; , 
+            &lt;li&gt; , 
+            &lt;dl&gt; , 
+            &lt;dt&gt; , 
+            &lt;dd&gt; , 
+        </p>
+    </header>
+
+    <div class="imagem"><p>&lt;/&gt;</p></div>
+  
+    <section>
+        <p><em>&lt;ul&gt e &lt;li&gt;;</em><b>: Listas não Ordenadas</b> </p>
+        <p>Utilizando Lista Não Ordenadas</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Lista dentro de Lista
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>SASS/SCSS</li>
+                    <li>React</li>
+                    <li>Angula</li>
+                    <li>Lista dentro da Lista de Outra Lista
+                        <ul>
+                            <li>GitHub</li>
+                            <li>Docker</li>
+                            <li>Xpress</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+    </section>
+
+    <section>
+        <p><em>&lt;ol&gt; e &lt;li&gt;</em><b>: Listas Ordenadas</b> Possue 2 Atributos, reversed, type, start</p>
+        <ol>
+            <li>reversed: Contagem reversa</li>
+            <li>start: inicio da contagem</li>
+            <li>type: Tipo, aceita (a, A, i, I, 1</li>
+        </ol><br>
+        <p>Primeiro Exemplo</p>
+        <ol type="A">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>
+                Lista dentro de Lista
+                <ol type="I" reversed>
+                    <li>ABCD</li>
+                    <li>V, VII, XV, a, b, c</li>
+                    <li>Aceita</li>
+                    <li>Outra Lista dentro da Lista
+                        <ol type="" reversed start="5">
+                            <li>Primeiro</li>
+                            <li>Segundo</li>
+                            <li>Terceiro</li>
+                            <li>Quarto</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <p><em>&lt;dl&gt;</em><b>: Lista de Definição, utiliza as tags &lt;dt&gt; e &lt;dl&gt;</b></p>
+
+        <p>Definindo a Lista de Definição</p>
+        <dl>
+            <dt>HMTL Developer</dt>
+            <dd>HTML Semantico</dd>
+            <dd>Listas em HTML</dd>
+
+            <dt>HMTL Developer</dt>
+            <dd>HTML Semantico</dd>
+            <dd>Listas em HTML</dd>
+        </dl>
+    </section>
+
+    <footer>
+        &copy; 05/2024 Elementos de Listas do HTML
+    </footer>
+
+</body>
+</html>
