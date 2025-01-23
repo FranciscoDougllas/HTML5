@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags em HTML</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            background-color: #fbfbfd;
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+
+        .cabeça{
+            margin-top: -3vh;
+            padding-top: 1vh;
+            background-color: #334;
+            color: #fff;
+            font-size: 20px;
+            
+        }
+        .cabeça h1{
+            margin: 2vh;
+        }
+
+        .cabeça > p, h1, h3{
+            padding: 10px;
+            text-align: center;
+        }
+
+        em{
+            margin-top: 30px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: #c6e6b3;
+        }
+        .imagem{
+            margin-top: -10px;
+            background-color: rgb(112, 112, 155);
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0px 25px 70px #000000;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        p{
+            padding: 1vh;
+        }
+        footer{
+            margin-top: 10vh;
+            text-align: center;
+        }
+        section{
+            border-radius: 10px;
+            margin-top: 5vh;
+            margin-bottom: 20px;
+            background-color: rgb(215, 227, 249);
+            box-shadow: 0 0 10px rgb(132, 174, 218);
+        }
+        
+        table, tr, th, td{
+            border: 1px solid #333;
+            padding: 10px;
+            box-shadow:2px 2px 20px #333;
+            text-align: center;
+        }
+        section table{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabeça">
+        <h1>Tags</h1>
+        <h3>Elementos de (TABELAS) do HTML</h3>
+        <p>&lt;table&gt; , 
+            &lt;caption&gt; , 
+            &lt;th&gt; , 
+            &lt;tr&gt; , 
+            &lt;td&gt; , 
+            &lt;thead&gt; , 
+            &lt;tbody&gt; , 
+            &lt;tfoot&gt; , 
+            &lt;col&gt; , 
+            &lt;colgroup&gt; , 
+        </p>
+    </header>
+
+    <div class="imagem"><p>&lt;/&gt;</p></div>
+  
+    <section>
+        <p><em>&lt;table&gt;</em><b>: Define a Tabela</b> </p>
+        <p><em>&lt;caption&gt;</em><b>: Legenda da tabela</b> </p>
+        <p><em>&lt;th&gt;</em><b>: Defina uma celula de cabeçalho da tabela</b> </p>
+        <p><em>&lt;tr&gt;</em><b>: Define a linha em uma tabela</b> </p>
+        <p><em>&lt;td&gt;</em><b>: Define uma celula em uma tabela</b> </p>
+        <p><em>&lt;thead&gt;</em><b>: Cabeçalho da tabela</b> </p>
+        <p><em>&lt;tbody&gt;</em><b>: Agrupa o conteúdo do corpo em uma tabela
+        </b> </p>
+        <p><em>&lt;tfoot&gt;</em><b>: Agrupa o conteúdo do rodapé em uma tabela
+        </b> </p>
+        <p><em>&lt;col&gt;</em><b>: Especifica propriedades de colunas dentro de tabela<colgroup>
+        </b> </p>
+        <p><em>&lt;colgroup&gt;</em><b>: Especifica um grupo de colunas para formatação</b> </p>
+
+    </section>
+
+    <section>
+        <p>Exemplo tabela com (table) (tr) e (td)</p>
+        <table>
+            <tr>
+                <th>HTML</td>
+                <th>CSS</td>
+                <th>JavaScript</td>
+                <th>Bootstrap</td>
+            </tr>
+
+            <tr>
+                <td>20:00</td>
+                <td>40:00</td>
+                <td>50:00</td>
+                <td>20:00</td>
+            </tr>
+
+            <tr>
+                <td>Curso 1</td>
+                <td>Curso 2</td>
+                <td>Curso 3</td>
+                <td>Curso 4</td>
+            </tr>
+            <tr>
+                <td>Curso 1</td>
+                <td>Curso 2</td>
+                <td>Curso 3</td>
+                <td>Curso 4</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <p>Exemplo de Uma Tabela completa com (thead, tbody, tfoot)</p>
+        <table>
+            <caption>Legenda Da Tabela com (caption)</caption>
+            <colgroup>
+                <col span="2" style="background-color: #ccc;">
+                <col span="1" slot="background-color: #ffff">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>JavaScript</th>
+                    <th>Python</th>
+                    <th>Bootstrap</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <tr>
+                    <td>Curso Otimo</td>
+                    <td colspan="2">Aqui pega 2 Linhas</td>
+                    <td>Python e Otimo</td>
+                    <td>JavaScript Tambem</td>
+                </tr>
+
+
+                <tr>
+                    <td rowspan="2">Colando e 2 Colunas</td>
+                    <td>Python</td>
+                    <td>Programação</td>
+                    <td>Software</td>
+                    <td>Aws</td>
+                </tr>
+
+
+                <tr>
+                    <td>Tabela</td>
+                    <td>Estudos</td>
+                    <td colspan="2">2 Linhas</td>
+                </tr>
+            </tbody>
+
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">Fundo com 3 Linhas</td>
+                    <td colspan="2">Fundo com 2 linhas</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <footer>
+        &copy; 05/2024 Elementos de TABELAS do HTML
+    </footer>
+
+</body>
+</html>

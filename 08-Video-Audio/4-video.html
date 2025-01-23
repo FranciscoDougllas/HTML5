@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de &lt;video&gt;</title>
+</head>
+<body>
+    <!-- A tag <video> é usada para incluir arquivos de vídeo em uma página HTML. -->
+    <!-- O atributo 'controls' adiciona controles padrão de reprodução de vídeo (play, pause, volume). -->
+    <!-- O atributo 'width' define a largura do vídeo. -->
+    <!-- O conteúdo dentro da tag <video> será exibido apenas se o navegador não suportar vídeo. -->
+    <video controls width="600">
+        <!-- O elemento <source> define o arquivo de vídeo a ser reproduzido. -->
+        <!-- O atributo 'src' define o caminho para o arquivo de vídeo. -->
+        <!-- O atributo 'type' define o formato do vídeo (e.g., "video/mp4"). -->
+        <source src="video.mp4" type="video/mp4">
+        <!-- O elemento <track> é usado para adicionar legendas e outros textos de suporte ao vídeo. -->
+        <track src="legendas.pt.vtt" kind="subtitles" label="Português" srclang="pt">
+        Seu navegador não suporta a tag <code>&lt;video&gt;</code>.
+    </video>
+</body>
+</html>

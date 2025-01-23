@@ -1,0 +1,32 @@
+<!--Esses atributos são usados juntos para definir e descrever itens em microdados.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o título da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Items</title>
+</head>
+<body>
+    <!-- Definição de microdados para um produto -->
+    <div itemscope itemtype="http://schema.org/Product" itemid="produto123" id="produto">
+        <span itemprop="name">Nome do Produto</span>
+        <span itemprop="price">$19.99</span>
+    </div>
+
+    <!-- Referência a outro item -->
+    <div itemscope itemref="produto">
+        <p>Veja mais sobre <span itemprop="name">Nome do Produto</span>.</p>
+    </div>
+</body>
+</html>
+
+<!--
+itemscope define um item em microdados.
+itemtype especifica o tipo do item usando um vocabulário, como Product.
+itemid define um identificador único para o item.
+itemref referencia outro item que possui o itemid especificado.
+No exemplo, um produto é descrito e referenciado em outro local da página.
+-->

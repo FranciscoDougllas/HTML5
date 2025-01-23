@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo da Tag &lt;output&gt;</title>
+</head>
+<body>
+    <!-- A tag <output> é usada para exibir o resultado de um cálculo ou de um processo -->
+    <!-- O atributo 'for' associa o resultado a um ou mais elementos de entrada -->
+    <form oninput="result.value = parseInt(a.value) + parseInt(b.value)">
+        <input type="number" id="a" value="0">
+        +
+        <input type="number" id="b" value="0">
+        =
+        <output name="result" for="a b">0</output>
+    </form>
+    <!-- 'name="result"' define o nome do campo de saída -->
+    <!-- 'for="a b"' associa o resultado aos campos de entrada 'a' e 'b' -->
+</body>
+</html>

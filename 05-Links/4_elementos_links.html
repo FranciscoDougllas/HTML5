@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags em HTML</title>
+
+    <link rel="stylesheet"    href="css.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="author"        href="https://www.author.francisco.com">
+    <link rel="help"          href="https://www.author.francisco.com">
+    <link rel="next"          href="proxima.pagina">
+    <link rel="prev"          href="pagina.anterior">
+    <link rel="alternate"     href="artigo.json" type="application/json">
+    <link rel="dns-prefetch"  href="https://www.author.francisco.com">
+    <link rel="preconnect"    href="pagina.web">
+    <link rel="prefetch"      href="pagina.web">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            background-color: #fbfbfd;
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+
+        .cabeça{
+            margin-top: -3vh;
+            padding-top: 1vh;
+            background-color: #334;
+            color: #fff;
+            font-size: 20px;
+            
+        }
+        .cabeça h1{
+            margin: 2vh;
+        }
+
+        .cabeça > p, h1, h3{
+            padding: 10px;
+            text-align: center;
+        }
+
+        em{
+            margin-top: 30px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: #c6e6b3;
+        }
+        .imagem{
+            margin-top: -10px;
+            background-color: rgb(112, 112, 155);
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0px 25px 70px #000000;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        p{
+            padding: 1vh;
+        }
+        footer{
+            margin-top: 10vh;
+            text-align: center;
+        }
+        section{
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 5vh;
+            margin-bottom: 20px;
+            background-color: rgb(215, 227, 249);
+            box-shadow: 0 0 10px rgb(132, 174, 218);
+        }
+        li{
+            margin-left: 15px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header class="cabeça">
+        <h1>Tags</h1>
+        <h3>Elementos de LINKS do HTML</h3>
+        <p>&lt;a&gt; , 
+            &lt;link&gt; , 
+            &lt;nav&gt; , 
+        </p>
+    </header>
+
+    <div class="imagem"><p>&lt;/&gt;</p></div>
+  
+    <section>
+        <p><em>&lt;a&gt;</em><b>: Define um hiperlink</b> Pode acessa links da internet, links internos ou mesmo links externos</p>
+        <p><em>&lt;link&gt;</em><b>: Relação entre o documento e um recursos externo</b></p>
+        <p><em>&lt;nav&gt;</em><b>: Links de navegação</b> </p>
+    </section>
+
+    <section>
+        <p>Exemplo utilizando a tag (a)</p>
+        <a href="https://www.udemy.com/pt/">Acessando o Site da Udemy</a><br>
+        <a href="https://www.dio.me/">Site da Dio</a>
+
+        <br>
+        <p>A Tag (a) Pode ser utilizada para acessa outras paginas HTML externas, ancoragem</p>
+        <a href="#" target="_blank">Pagina 1</a>
+        <a href="#" target="_parent">Pagina 2</a>
+        <a href="#" target="_self">Pagina 3</a>
+        <a href="#" target="_top">Pagina 4</a>
+    </section>
+
+    <section>
+        <p>Utilizando o atributo Download com a tag (a)</p>
+        <a href="" ping="https://colab.research.google.com/drive/1REuqFCfCLl_BLO7_lBSYLYKjxq8Nqfy5?ouid=114974366428478187738&usp=drive_link" download="Nome do Arquivo"> Download arquivo do Jupyter Notebook</a>
+    </section>
+
+    <section>
+        <h2>Link</h2>
+        <ul> Atributos e Relacionamentos
+            <li><b>rel="stylesheet", "icon"</b> Especifica a relação entre o documento atual e o documento vinculado</li>
+            <li><b>href="stilo.css", "favicon.ico"</b>Localização do documento vinculado</li>
+            <li><b>type="image/x-icon"</b>Tipo de midia do documento vinculado</li>
+            <li><b>author:</b> Autor do documento</li>
+            <li><b>help:</b> Documento de ajuda</li>
+            <li><b>licence:</b> Licença de uso</li>
+            <li><b>next:</b> Proximo documento</li>
+            <li><b>prev:</b> Documento anterior</li>
+            <li><b>alternate:</b> Recurso alternativo application/json</li>
+            <li><b>dns-prefetch: </b>Resolução DNS</li>
+            <li><b>preconnect: </b>Pre-conexão previa</li>
+            <li><b>prefetch: </b>Pre-busca</li>
+            <li><b>nav</b> Tag para links no HTML</li>
+        </ul>
+    </section>
+    <section>
+        <p><em>&lt;link&gt;</em><b>: Linka links e estilos para o HTML.</b> possue 2 atributos, rel, href</p>
+        <p><em>&lt;link rel=stylesheet href="stilo.css"&gt;</em><b>: </b> </p>
+    </section>
+
+    <section>
+        <p><em>&lt;link rel="icon" href="favicon.co" type="image/x-ison"&gt;</em><b>: </b> Linka estilo de favicon para a pagina HTML, essa utilização e a padrão</p>
+    </section>
+
+    <section>
+        <p><em>&lt;link rel="author" href="https://www.author.francisco.com"&gt;</em><b>: </b>Autor do documento</p>
+    </section>
+
+    <section>
+        <p><em>&lt;link rel="help" href="https://www.author.francisco.com"&gt;</em><b>: </b> Ajuda</p>
+    </section>
+
+    <section>
+        <p><em>&lt;link rel="next" href="proxima.pagina"&gt;</em><b>: </b> Pre carrega a proxima pagina, ajuda na velocidade de carregamento de paginas</p>
+    </section>
+
+    <section>
+        <p><em>&lt;link rel="prev" href="pagina.anterior"&gt;</em><b>: </b> Pre carrega a pagina anterior, ou pagina principal</p>
+    </section>
+
+    <section>
+        <p><em>&lt;link rel="alternate" href="artigo.json" type="application/json"&gt;</em><b>: </b> Utilizado para arquivos alternativos e Json</p>
+    </section>
+
+    <section>
+        <p><em>&lt;link rel="dns-prefetch"  href="https://www.author.francisco.com"&gt;</em><b>: </b> Carregamento previo com dns-prefetch</p>
+    </section>
+
+    <section>
+        <p><em>&lt;link rel="preconnect"  href="pagina.web"&gt;</em><b>: </b> Pre conexão de uma pagina a outra</p>
+    </section>
+
+    <section>
+        <p><em>&lt;link rel="prefetch" href="pagina.web"&gt;</em><b>: Velocidade e carregamento de paginas</b> utilizada para salva cookies e cache no navegador para melhora o desenpenho de carregamento de paginas</p>
+    </section>
+
+    <section>
+        <p><em>&lt;nav&gt;</em><b>: Tag para navegaçao interna nas paginas e externa para links</b> </p>
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <footer>
+        &copy; 05/2024 Elementos de Links do HTML
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de &lt;map&gt;</title>
+</head>
+<body>
+    <!-- A tag <map> define um mapa de imagem, que pode ser usado para criar áreas clicáveis em uma imagem. -->
+    <!-- O atributo 'name' deve ser único e é usado para referenciar o mapa de imagem. -->
+    <map name="mapa-exemplo">
+        <!-- Cada <area> define uma área clicável dentro da imagem. -->
+        <!-- O atributo 'shape' define a forma da área (rect, circle, poly). -->
+        <!-- O atributo 'coords' define as coordenadas da área. -->
+        <!-- O atributo 'href' define o URL para o qual a área clicada levará. -->
+        <area shape="rect" coords="34,44,270,350" href="pagina1.html" alt="Área 1">
+        <area shape="circle" coords="200,200,50" href="pagina2.html" alt="Área 2">
+    </map>
+
+    <!-- A tag <img> com o atributo 'usemap' associa a imagem ao mapa de imagem definido acima. -->
+    <img src="imagem-mapa.jpg" usemap="#mapa-exemplo" alt="Imagem com mapa de imagem">
+</body>
+</html>

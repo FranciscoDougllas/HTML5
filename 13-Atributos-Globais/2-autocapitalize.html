@@ -1,0 +1,48 @@
+<!--O atributo autocapitalize controla como o texto digitado em um campo 
+de entrada será automaticamente capitalizado pelo navegador. 
+Este atributo é especialmente útil em dispositivos móveis.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o título da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Autocapitalize</title>
+</head>
+<body>
+    <!-- Cria um formulário com campos de entrada -->
+    <form>
+        <!-- Campo de entrada para o nome -->
+        <label for="nome">Nome:</label>
+        <!-- 'autocapitalize' define como o texto digitado será capitalizado -->
+        <input type="text" id="nome" name="nome" autocapitalize="words">
+        <!-- 'autocapitalize="words"' capitaliza a primeira letra de cada palavra -->
+        
+        <br><br>
+        
+        <!-- Campo de entrada para o email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocapitalize="none">
+        <!-- 'autocapitalize="none"' não capitaliza automaticamente o texto -->
+        
+        <br><br>
+        
+        <!-- Botão de envio do formulário -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
+<!--:
+O atributo autocapitalize aceita os seguintes valores:
+none: Não capitaliza o texto automaticamente.
+sentences: Capitaliza a primeira letra de cada sentença.
+words: Capitaliza a primeira letra de cada palavra.
+characters: Capitaliza todas as letras.
+
+No exemplo:
+No campo "Nome", o valor autocapitalize="words" faz com que a primeira 
+letra de cada palavra seja capitalizada.
+No campo "Email", o valor autocapitalize="none" desativa a capitalização automática.
+-->

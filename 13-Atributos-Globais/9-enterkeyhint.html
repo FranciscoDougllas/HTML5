@@ -1,0 +1,33 @@
+<!--
+O atributo enterkeyhint sugere ao navegador qual ação deve 
+ser realizada quando o usuário pressiona a tecla "Enter" em um campo de entrada.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o título da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Enterkeyhint</title>
+</head>
+<body>
+    <!-- Formulário com um campo de pesquisa -->
+    <form>
+        <label for="pesquisa">Pesquisa:</label>
+        <!-- 'enterkeyhint' sugere uma ação ao pressionar Enter -->
+        <input type="search" id="pesquisa" name="pesquisa" enterkeyhint="search">
+        <!-- 'enterkeyhint="search"' sugere uma ação de pesquisa -->
+        
+        <br><br>
+        
+        <!-- Botão de envio do formulário -->
+        <button type="submit">Pesquisar</button>
+    </form>
+</body>
+</html>
+
+
+<!--
+O atributo enterkeyhint pode sugerir diferentes ações, como search, go, done, next, entre outros.
+No exemplo, enterkeyhint="search" sugere que a tecla Enter execute uma ação de pesquisa.
+-->

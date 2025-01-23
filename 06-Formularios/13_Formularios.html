@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt, eng, es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags em HTML</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            background-color: #fbfbfd;
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+
+        .cabeça{
+            margin-top: -3vh;
+            padding-top: 1vh;
+            background-color: #334;
+            color: #fff;
+            font-size: 20px;
+            
+        }
+        .cabeça h1{
+            margin: 2vh;
+        }
+
+        .cabeça > p, h1, h3{
+            padding: 10px;
+            text-align: center;
+        }
+
+        em{
+            margin-top: 30px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: #c6e6b3;
+        }
+        .imagem{
+            margin-top: -10px;
+            background-color: rgb(112, 112, 155);
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0px 25px 70px #000000;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        p{
+            padding: 1vh;
+        }
+        footer{
+            margin-top: 10vh;
+            text-align: center;
+        }
+        section{
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 5vh;
+            margin-bottom: 20px;
+            background-color: rgb(215, 227, 249);
+            box-shadow: 0 0 10px rgb(132, 174, 218);
+        }
+        input{
+            width: 50%;
+            height: 30px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header class="cabeça">
+        <h1>Tags</h1>
+        <h3>Elementos de Formularios do HTML</h3>
+        <p>&lt;form&gt; , 
+            &lt;input&gt; , 
+            &lt;textarea&gt; , 
+            &lt;button&gt; , 
+            &lt;select&gt; , 
+            &lt;optgroup&gt; , 
+            &lt;option&gt; , 
+            &lt;label&gt; , 
+            &lt;fieldset&gt; , 
+            &lt;legend&gt; , 
+            &lt;datalist&gt; , 
+            &lt;output&gt; , 
+        </p>
+    </header>
+
+    <div class="imagem"><p>&lt;/&gt;</p></div>
+  
+    <section>
+        <p><em>&lt;form&gt;</em> Formulario HTML para entrada de dados</p>
+        <p><em>&lt;input&gt;</em> Entrada de dados</p>
+        <p><em>&lt;textarea&gt;</em> Entrada de dados multilinha(area de texto)</p>
+        <p><em>&lt;button&gt;</em><>: Botao Clicavel</p>
+        <p><em>&lt;select&gt;</em>  List suapensa</p>
+        <p><em>&lt;ouptgroup&gt;</em> Grupo de Opçoes relacionadas em uma lista suspensa</p>
+        <p><em>&lt;option&gt;</em> Opções em uma lista suspensa</p>
+        <p><em>&lt;label&gt;</em> Rotulo para elementos de entrada de dados (input)</p>
+        <p><em>&lt;fieldset&gt;</em> Agrupamento de elementos relacionados em um formulario</p>
+        <p><em>&lt;legend&gt;</em> Lengeda do (fieldset)</p>
+        <p><em>&lt;datalist&gt;</em> Opçoes predefinidas para entrada de dados</p>
+        <p><em>&lt;output&gt;</em> Resultado de um calculo</p>
+    </section>
+
+    <section>
+        <p><em>&lt;inupt type="text"&gt;</em> input para palavras textos</p>
+        <label for="texto-nome">Texto Nome:</label>
+        <input 
+        type="text" 
+        id="texto-nome" 
+        name="texto" 
+        placeholder="Digite aqui"
+        value="Atributo do valor no momento, subscrevo o placeholder"
+        size="60"
+        minlength="10"
+        maxlength="100"
+        required     
+        spellcheck="true">    
+        <!--readonly: bloqueia o input
+            required: torna o campo obrigatorio
+            size: tamanho do input
+            spellcheck: Corrigi a gramatica no input
+            list: adiciona um datalist-->
+    </section>
+
+    <section>
+        <p><em>&lt;input type="email"&gt;</em> Input para emails</p>
+        <label for="email">Email:</label>
+        <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Digite aqui o seu email"
+        size="60"
+        minlength="10"
+        maxlength="100"
+        required     
+        multiple>   
+    </section>
+
+    <section>
+        <p><em>&lt;input type="password"&gt;</em> Input para senhas</p>
+        <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        placeholder="Digite sua senha"
+        size="60"
+        minlength="10"
+        maxlength="100"
+        required>
+    </section>
+
+    <section>
+        <p><em>&lt;input type="hidden"&gt;</em> Input fica invisivel, não e muito utilizado atualmente</p>
+        <input 
+        type="hidden" 
+        name="hidden">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="number"&gt;</em> Valores Numericos</p>
+        <input 
+        type="number" 
+        id="number" 
+        name="number" 
+        placeholder="Digite um numero"
+        required>
+        <button>Enviar</button>
+    </section>
+
+    <section>
+        <p><em>&lt;input type="range"&gt;</em> Intervalos de ponto, exibe uma barra de progresso</p>
+        <input 
+        type="range" 
+        name="range" 
+        id="range"
+        value="5"
+        step="3"
+        max="100"
+        min="10">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="color"&gt;</em> Utilizado para cores</p>
+        <input 
+        type="color" 
+        name="color" 
+        id="color"
+        value="#cccccc"
+        style="width: 20vw; height: 10vh;">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="search"&gt;</em> Input para busca pesquisa</p>
+        <input 
+        type="search" 
+        name="search" 
+        id="search"
+        placeholder="Consulta Buscar"
+        minlength="10"
+        maxlength="100"
+        size="30"
+        spellcheck="true">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="file"&gt;</em> Input para Upload de arquivos</p>
+        <input 
+        type="file" 
+        name="file" 
+        id="file"
+        multiple
+        accept=".pdf, .docx, .png, .jpg, .exe"
+        required>
+    </section>
+
+    <section>
+        <p><em>&lt;input type="date"&gt;</em> Utilizado para Datas, exibe um calendario anual de datas</p>
+        <input 
+        type="date" 
+        name="date" 
+        id="date"
+        required>
+    </section>
+
+    <section>
+        <p><em>&lt;input type="month"&gt;</em> Utilizado para Datas, Meses</p>
+        <input 
+        type="month" 
+        name="month" 
+        id="month">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="week"&gt;</em> Utilizado para Datas, Semanas</p>
+        <input 
+        type="week" 
+        name="week" 
+        id="week">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="time"&gt;</em> Utilizado para horarios</p>
+        <input type="time" name="hora" id="hora"
+        required>
+    </section>
+
+    <section>
+        <p><em>&lt;input type="datetime-local"&gt;</em> Horario e Localizacao</p>
+        <input type="datetime-local" name="local" id="local"
+        required>
+    </section>
+
+    <section>
+        <p><em>&lt;label for="idade"&gt;</em>Utilizando o Label com o input</p>
+        <label for="nome">Nome:</label><br>
+        <input type="text" name="nome" id="nome" placeholder="Digite o nome">
+
+        <br>
+        <label for="idade">Idade:</label><br>
+        <input type="number" name="idade" id="idade" placeholder="Idade">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="checkbox"&gt;</em> Seleçao de Multiplas opcoes</p>
+        <label for="check">CheckBox</label><br>
+        <input type="checkbox" name="check" id="check"> Manga<br>
+        <input type="checkbox" name="check" id="check"> Abacate<br>
+        <input type="checkbox" name="check" id="check"> Maçã<br>
+        <input type="checkbox" name="check" id="check"> Laranja<br>
+    </section>
+
+    <section>
+        <p><em>&lt;input type="radio"&gt;</em> Aceita apenas 1 opcao</p>
+        <label for="radio">Melancia</label>
+        <input type="radio" name="radio" id="radio">
+
+        <label for="radio">Cerveja</label>
+        <input type="radio" name="radio" id="radio">
+
+        <label for="radio">Cachaça</label>
+        <input type="radio" name="radio" id="radio">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="button"&gt;</em> Utilização de Botoes</p>
+        <label for="botao">Botao</label><br>
+        <input type="button" value="" name="botao" id="botao" style="width: 70px;"><br>
+        <button>Botao com Button</button>
+    </section>
+
+    <section>
+        <p><em>&lt;input type="submit"&gt;</em> Botao para envio de formulario</p>
+        <label for="submit">Submit Enviar</label><br>
+        <input type="submit" value="" id="submit" name="submit">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="reset"&gt;</em> Botao para reseta/limpa o formulario</p>
+        <label for="limpa">Limpa o Formulario</label><br>
+        <input type="reset" value="" id="limpa" name="limpa">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="image"&gt;</em> Envio de formulario com uma imagen no botao</p>
+        <label for="envia">IMG Envia</label>
+        <input type="image" src="19362653.jpg" alt="">
+    </section>
+
+    <section>
+        <p><em>&lt;input type="text" list="nomes"&gt; &lt;datalist&gt;</em> Input Datalist</p>
+        <label for="nom">Estados-Cidades:</label><br>
+        <input type="text" id="nom" list="nomes" placeholder="Selecione o Estado/Cidade"><br>
+        <datalist id="nomes">
+            <option value="Campinas">Campinas</option>
+            <option value="Sao Paulo">Sao Paulo</option>
+            <option value="Teresina">Teresina</option>
+            <option value="Maranhao">Maranhao</option>
+        </datalist>
+    </section>
+
+    <section>
+        <p><em>&lt;textarea&gt;</em> Textarea, area de textos</p>
+        <label for="textarea">Digite a mensagem</label><br>
+        <textarea name="" id="textarea" placeholder="Digite sua mensagem"
+        required minlength="10" maxlength="200" row="20" cols="50"
+        wrap="soft" dir="rtl" spellcheck="on" autofocus></textarea>
+    </section>
+
+    <section>
+        <p><em>&lt;select&gt;</em> Multiplas opcoes para seleciona</p>
+        <label for="selecinone">Selecione o carro</label>
+        <select name="select" id="selecinone"
+                >
+            <option value="" selected>--Selecione--</option>
+            <option value="Fiat">Toro</option>
+            <option value="Fiat">Uno</option>
+            <option value="Fiat">Way</option>
+            <option value="Fiat">Cronos</option>
+            <option value="Fiat">Mobi</option>
+        </select>
+    </section>
+
+    <section>
+        <p><em>&lt;optgroup&gt;</em> Agrupa opções dentro do select</p>
+        <select name="selec" id="selec">
+            <option value="Selecione">--Selecione--</option>
+            <optgroup label="Audi">
+                <option value="1.6">1.6</option>
+                <option value="Preto">Preto</option>
+                <option value="Gasolina">Gasolina</option>
+            </optgroup>
+
+            <optgroup label="Fiat">
+                <option value="Strada">Strada</option>
+                <option value="1.6">1.6</option>
+                <option value="Branco">Branco</option>
+            </optgroup>
+
+            <optgroup label="Hilux">
+                <option value="2.4">2.4</option>
+                <option value="4x4">4x4</option>
+                <option value="Prata">Prata</option>
+            </optgroup>
+        </select>
+    </section>
+
+    <section>
+        <p><em>&lt;fieldset&gt; & &lt;legend&gt;</em></p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text"><br>
+            <label for="idade">Idade</label><br>
+            <input type="number" name="" id="">
+        </fieldset>
+    </section>
+
+    <section>
+        <p><em>&lt;button&gt;</em> Botao</p>
+        <form action="envia">
+            <button type="button" id="btn" name="btn">Envia Dados</button>
+        </form>
+        
+    </section>
+
+    <section>
+        <p><em>&lt;output&gt;</em></p>
+        <form action="" oninput="resultado.value = parseInt(numeroA.value)  + parseInt(numeroB.value)  + parseInt(numeroC.value) ">
+            <input type="number" name="0" id="numeroA">
+            <p>+</p>
+            <input type="number" name="0" id="numeroB">
+            <p>+</p>
+            <input type="number" name="0" id="numeroC">
+            <p>=</p>
+            <output name="resultado"
+                    id="resultado"
+                    for="numeroA numeroB numeroC">
+            </output>
+        </form>
+    </section>
+
+    <section>
+        <p><em>&lt;form&gt;</em> Tag de Formularios</p>
+        <form action="https://sitedainternet.com"
+            id="formCadastro"
+            name="formCadastro"
+            autocomplete="on"
+            method="get"
+            target="_self"
+            accept-charset="UTF-8"
+            enctype="multipart/form-data">
+            <input type="text" name="nome" id="nome" placeholder="Nome"><br>
+            <input type="email" name="email" id="email" placeholder="Email"><br>
+            <input type="file" name="" id=""><br>
+            <button type="submit" 
+                style="width: 220px; 
+                height: 30px;
+                color: #0e136a;">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 05/2024 Elementos de Formularios do HTML
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de &lt;dialog&gt;</title>
+    <style>
+        dialog {
+            border: none; /* Remove a borda padrão do diálogo. */
+            padding: 20px; /* Adiciona preenchimento interno ao diálogo. */
+            border-radius: 8px; /* Adiciona bordas arredondadas ao diálogo. */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do diálogo. */
+        }
+    </style>
+</head>
+<body>
+    <!-- A tag <dialog> é usada para criar caixas de diálogo interativas, como modais. -->
+    <!-- O atributo 'open' torna o diálogo visível ao carregar a página. -->
+    <dialog open>
+        <h2>Diálogo de Exemplo</h2>
+        <p>Este é um exemplo de um diálogo. Clique fora do diálogo para fechá-lo.</p>
+        <button onclick="document.querySelector('dialog').close()">Fechar</button>
+    </dialog>
+</body>
+</html>

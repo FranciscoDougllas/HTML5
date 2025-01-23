@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Todos os Tipos de &lt;input&gt;</title>
+</head>
+<body>
+    <h1>Exemplo de Todos os Tipos de &lt;input&gt;</h1>
+    
+    <!-- Tipo text: Campo de texto de linha única -->
+    <label for="text">Texto:</label>
+    <input type="text" id="text" name="text" placeholder="Digite seu texto">
+    <!-- 'type="text"' define um campo de entrada de texto -->
+    <!-- 'name="text"' define o nome do campo para identificação no envio do formulário -->
+    <!-- 'placeholder="Digite seu texto"' fornece um texto de ajuda no campo -->
+    <br><br>
+
+    <!-- Tipo password: Campo de senha -->
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" placeholder="Digite sua senha">
+    <!-- 'type="password"' oculta o texto digitado -->
+    <br><br>
+
+    <!-- Tipo email: Campo para entrada de e-mail -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="exemplo@dominio.com">
+    <!-- 'type="email"' valida o formato do e-mail -->
+    <br><br>
+
+    <!-- Tipo number: Campo para entrada de números -->
+    <label for="number">Número:</label>
+    <input type="number" id="number" name="number" min="1" max="10" step="1" value="5">
+    <!-- 'type="number"' permite apenas números -->
+    <!-- 'min="1"' define o valor mínimo permitido -->
+    <!-- 'max="10"' define o valor máximo permitido -->
+    <!-- 'step="1"' define o incremento/decremento do valor -->
+    <!-- 'value="5"' define o valor inicial do campo -->
+    <br><br>
+
+    <!-- Tipo range: Campo para selecionar um valor dentro de um intervalo -->
+    <label for="range">Faixa:</label>
+    <input type="range" id="range" name="range" min="0" max="100" step="10" value="50">
+    <!-- 'type="range"' permite selecionar um valor entre o mínimo e o máximo com um controle deslizante -->
+    <!-- 'min="0"' define o valor mínimo -->
+    <!-- 'max="100"' define o valor máximo -->
+    <!-- 'step="10"' define o incremento/decremento do valor -->
+    <!-- 'value="50"' define o valor inicial do controle deslizante -->
+    <br><br>
+
+    <!-- Tipo date: Campo para selecionar uma data -->
+    <label for="date">Data:</label>
+    <input type="date" id="date" name="date">
+    <!-- 'type="date"' permite selecionar uma data -->
+    <br><br>
+
+    <!-- Tipo time: Campo para selecionar um horário -->
+    <label for="time">Hora:</label>
+    <input type="time" id="time" name="time">
+    <!-- 'type="time"' permite selecionar uma hora -->
+    <br><br>
+
+    <!-- Tipo datetime-local: Campo para selecionar data e hora -->
+    <label for="datetime-local">Data e Hora:</label>
+    <input type="datetime-local" id="datetime-local" name="datetime-local">
+    <!-- 'type="datetime-local"' permite selecionar data e hora -->
+    <br><br>
+
+    <!-- Tipo color: Campo para selecionar uma cor -->
+    <label for="color">Cor:</label>
+    <input type="color" id="color" name="color">
+    <!-- 'type="color"' permite selecionar uma cor -->
+    <br><br>
+
+    <!-- Tipo file: Campo para upload de arquivos -->
+    <label for="file">Arquivo:</label>
+    <input type="file" id="file" name="file">
+    <!-- 'type="file"' permite o upload de arquivos -->
+    <br><br>
+
+    <!-- Tipo checkbox: Campo para seleção múltipla -->
+    <label for="checkbox">Aceito os termos:</label>
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <!-- 'type="checkbox"' permite seleção ou desmarcação -->
+    <br><br>
+
+    <!-- Tipo radio: Campo para seleção única -->
+    <label>Escolha uma opção:</label>
+    <input type="radio" id="radio1" name="radio" value="opcao1">
+    <label for="radio1">Opção 1</label>
+    <input type="radio" id="radio2" name="radio" value="opcao2">
+    <label for="radio2">Opção 2</label>
+    <!-- 'type="radio"' permite selecionar uma única opção entre várias -->
+    <br><br>
+
+    <!-- Tipo hidden: Campo oculto -->
+    <input type="hidden" id="hidden" name="hidden" value="valor oculto">
+    <!-- 'type="hidden"' não é visível ao usuário -->
+    <br><br>
+
+    <!-- Tipo search: Campo para pesquisa -->
+    <label for="search">Pesquisa:</label>
+    <input type="search" id="search" name="search" placeholder="Pesquisar...">
+    <!-- 'type="search"' é similar a 'text', mas com funcionalidades de pesquisa -->
+    <br><br>
+
+    <!-- Tipo tel: Campo para entrada de número de telefone -->
+    <label for="tel">Telefone:</label>
+    <input type="tel" id="tel" name="tel" placeholder="+55 (11) 1234-5678">
+    <!-- 'type="tel"' permite inserir um número de telefone -->
+    <br><br>
+
+    <!-- Tipo url: Campo para entrada de URL -->
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url" placeholder="https://www.example.com">
+    <!-- 'type="url"' valida o formato da URL -->
+    <br><br>
+
+    <!-- Tipo month: Campo para selecionar um mês e ano -->
+    <label for="month">Mês:</label>
+    <input type="month" id="month" name="month">
+    <!-- 'type="month"' permite selecionar um mês e ano -->
+    <br><br>
+
+    <!-- Tipo week: Campo para selecionar uma semana -->
+    <label for="week">Semana:</label>
+    <input type="week" id="week" name="week">
+    <!-- 'type="week"' permite selecionar uma semana de um ano -->
+    <br><br>
+
+    <!-- Tipo url: Campo para entrada de uma URL -->
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url" placeholder="https://example.com">
+    <!-- 'type="url"' valida que a entrada é uma URL -->
+    <br><br>
+
+    <!-- Tipo datetime: Campo para selecionar data e hora -->
+    <label for="datetime">Data e Hora:</label>
+    <input type="datetime-local" id="datetime" name="datetime">
+    <!-- 'type="datetime-local"' permite selecionar data e hora -->
+    <br><br>
+
+</body>
+</html>

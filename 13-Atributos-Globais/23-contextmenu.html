@@ -1,0 +1,29 @@
+<!--O atributo contextmenu permite associar um menu 
+de contexto personalizado a um elemento.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o título da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Contextmenu</title>
+</head>
+<body>
+    <!-- Parágrafo com menu de contexto personalizado -->
+    <p id="meuTexto" contextmenu="menuPersonalizado">Clique com o botão direito aqui</p>
+    
+    <!-- Definição do menu de contexto -->
+    <menu type="context" id="menuPersonalizado">
+        <menuitem label="Opção 1" onclick="alert('Opção 1 selecionada')"></menuitem>
+        <menuitem label="Opção 2" onclick="alert('Opção 2 selecionada')"></menuitem>
+    </menu>
+</body>
+</html>
+
+<!--
+O atributo contextmenu permite definir um menu de contexto personalizado, 
+que aparece ao clicar com o botão direito.
+No exemplo, um menu de contexto personalizado com duas opções é associado ao parágrafo.
+-->

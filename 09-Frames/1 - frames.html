@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de &lt;frameset&gt;, &lt;frame&gt; e &lt;noframes&gt;</title>
+</head>
+<body>
+    <!-- A tag <frameset> define um conjunto de frames -->
+    <!-- A tag <frame> define um frame individual dentro do frameset -->
+    <!-- A tag <noframes> define o conteúdo a ser exibido em navegadores que não suportam frames -->
+
+    <!-- <frameset> não é suportado no HTML5. Usado apenas para exemplos de HTML 4.01 -->
+    <frameset cols="25%, 75%">
+        <!-- O atributo 'cols' define a largura das colunas dos frames -->
+        <!-- Aqui, o primeiro frame ocupa 25% da largura, e o segundo 75% -->
+        
+        <!-- <frame> define um frame individual dentro do frameset -->
+        <frame src="left.html" name="leftFrame">
+        <!-- 'src' especifica a URL do documento a ser exibido no frame -->
+        <!-- 'name' atribui um nome ao frame, que pode ser usado para links -->
+        
+        <frame src="right.html" name="rightFrame">
+    </frameset>
+    
+    <!-- <noframes> define o conteúdo a ser exibido em navegadores que não suportam frames -->
+    <noframes>
+        <body>
+            <!-- O conteúdo dentro de <noframes> será exibido se o navegador não suportar frames -->
+            <h1>Seu navegador não suporta frames.</h1>
+            <p>Por favor, atualize seu navegador para visualizar esta página corretamente.</p>
+        </body>
+    </noframes>
+</body>
+</html>
+
+
+<!--OBS: Não utilize mais frames-->
